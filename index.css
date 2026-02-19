@@ -1,0 +1,68 @@
+*{
+    text-align: center;
+    margin: 0vw;
+    padding: 0vw;
+    flex-direction: row;
+}
+
+body{
+    display: flex;
+    margin: 2.5vh 2.5vw 2.5vh 2.5vw;
+}
+
+
+#theColumn{
+    background-color: blue;
+    height: 95vh;
+    width: 22.5vw;
+    border-radius: 4vh;
+    margin-right: 2.5vw;
+    flex-direction: column;
+}
+
+textarea, #output{
+    height: 25vh;
+    width: 70vw;
+    background-color: pink;
+    resize: none;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 7.5vh;
+}
+
+ 
+#outputText{
+    margin-top: 7.5vh;
+}
+
+textarea, #theColumn, #output, #button{
+    border-radius: 4vh;
+    border: 0.25vh solid black;
+}
+
+
+
+select{
+    font-size: large;
+    border: none;
+    
+}
+
+#keyShiftTextArea{
+    flex-direction: row;
+}
+
+p{
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.button{
+  background-color: yellow;
+  padding: 0;
+}
+
+#ENCRYPT{
+    background-color: blueviolet;
+    color: white;
+}

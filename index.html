@@ -1,0 +1,28 @@
+<!-- Alannah Steck
+U4L1
+Cipher Tool -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <section id="theColumn">h</section>
+    <div><h3 class="button" id="ENCRYPT" onclick="changeSelection(true)">ENCRYPT</h3></div>
+    <div><h3 class="button" id="DECRYPT" onclick="changeSelection(false)">DECRYPT</h3></div>
+    <section>
+    <h1>INPUT:</h1>
+    <textarea></textarea>
+    <div id="keyShiftTextArea">
+    <h3 id="keyShiftText">Key shift by <select></select></h3>
+    </div>
+    <h1 id="outputText">OUTPUT:</h1>
+    <div id="output"></div>
+    <div onclick="genOutput()"><h3 class="button">ENCRYPT/DECRYPT</h3></div>
+    </section>
+    <script src="index.js"></script>
+    <script>genDropdownOpts()</script>
+  </body>
+</html>
