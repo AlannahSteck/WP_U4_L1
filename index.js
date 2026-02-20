@@ -19,7 +19,7 @@ function genOutput(){
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let outputResult = "";
     const inputText = input.value;
-    let keyShift = Number(dropdown.value)-1;
+    let keyShift = Number(dropdown.value);
     if (Encryption.style.backgroundColor == "yellow"){
         keyShift = 26 - keyShift
     }
@@ -35,15 +35,14 @@ function genOutput(){
            outputResult += inputText[i];
         } else{
             if (shiftWith == lowercase){
-                asciiNum -= 96;
+                asciiNum -= 97;
             } else{
-                asciiNum -= 64;
+                asciiNum -= 65;
             }
-            /// A B C D E F G H I J K L M N O P Q R S T U V W X Y Z //// a b c d e f g h i j k l m n o p q r s t u v w x y z
             let newAlphabetInd = (Math.abs(asciiNum + keyShift))%26
             console.log(asciiNum)
             outputResult += shiftWith[newAlphabetInd]
-            console.log(newAlphabetInd-1)
+            console.log(newAlphabetInd)
         }
         
     }
